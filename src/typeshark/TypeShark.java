@@ -6,12 +6,10 @@
 package typeshark;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import typeshark.Menus.MenuInicio;
+import typeshark.Menus.MenuPrincipal;
 
 /**
  *
@@ -21,6 +19,12 @@ public class TypeShark extends Application {
     
     @Override
     public void start(Stage primaryStage) {
+    MenuPrincipal pane = new MenuPrincipal();
+    Scene scene = new Scene(pane.getRoot());
+    
+    primaryStage.setScene(scene);
+    primaryStage.show();
+    
     }
 
     /**
